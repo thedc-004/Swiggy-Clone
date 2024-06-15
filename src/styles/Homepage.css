@@ -1,0 +1,32 @@
+.homepage {
+  padding: 0 10vw;
+}
+
+.homepage .header {
+  justify-content: space-between;
+  padding: 0 5vw;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.header__logo img {
+  height: 40px;
+}
+
+.header__right ul {
+  gap: 2rem;
+  font-size: 1.05rem;
+}
+
+.header__right li {
+  list-style-type: none;
+}
+
+.header__right li span {
+  margin-left: 5px;
+}
+
+.header__left .header__item span {
+  margin-right: 5px;
+  margin-left: 20px;
+}
