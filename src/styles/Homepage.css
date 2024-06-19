@@ -34,8 +34,89 @@
 .dishesSlider {
   padding-left: 20vw;
   overflow: scroll;
+  margin-bottom: 20px;
 }
 
 .dishesSliderItem img {
   height: 200px;
+}
+
+.topLocalRestSliderDiv {
+  height: 500px;
+  margin-top: 30px;
+}
+
+.restaurantListDiv .restaurantList {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}
+
+.restaurantCard {
+  overflow: hidden;
+  transition: 0.2s 0.2s;
+}
+
+.restaurantCard img {
+  height: 175px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.restaurantCardBody {
+  padding: 0 10px 10px;
+}
+
+.restaurantCard:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.restaurantListDiv .filterList {
+  margin: 15px 0;
+  justify-content: start;
+}
+
+.filterList > button {
+  all: unset;
+  border: 1px solid #585858;
+  padding: 5px;
+  margin-left: 20px;
+  border-radius: 10px;
+  color: black;
+  transition: 0.3s;
+}
+
+.filterList > button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: #d0cece;
+}
+
+.searchbar {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 20vw;
+}
+
+.filterList .searchbar input {
+  all: unset;
+  height: 2rem;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 0 10px;
+  font-size: 0.9rem;
+}
+
+.searchbar button {
+  all: unset;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.filterList .selectedButton {
+  background-color: #585858;
+  color: white;
 }

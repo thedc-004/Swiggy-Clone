@@ -1,16 +1,19 @@
-import { dishesData } from "../utils/dishesData.json";
-
-function DishesSlider() {
+function DishesSlider({ sliderData }) {
   return (
     <div className="dishesSliderContainer">
       <div className="dishesSliderHeader">
         <h2>What's on your mind?</h2>
       </div>
       <div className="dishesSlider flex">
-        {dishesData.map(({ imgUrl, name }) => {
+        {sliderData.map((sliderItem) => {
+          let imgUrl =
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/" +
+            sliderItem.imageId;
+          let id = sliderItem.id;
+          let altText = sliderItem.accessibility.altText;
           return (
-            <div className="dishesSliderItem">
-              <img src={imgUrl} alt={name + "dishes Restaurant"} />
+            <div className="dishesSliderItem" key={id}>
+              <img src={imgUrl} alt={altText} />
             </div>
           );
         })}

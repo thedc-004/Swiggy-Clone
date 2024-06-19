@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "This is the clone of the Swiggy app.",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev" : "parcel index.html"
   },
   "author": "The DC",
   "license": "ISC",
