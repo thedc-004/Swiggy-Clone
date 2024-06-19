@@ -120,3 +120,18 @@
   background-color: #585858;
   color: white;
 }
+
+.footer {
+  background-color: #585858;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer > .flex {
+  justify-content: space-around;
+  align-items: start;
+  padding: 5rem;
+  margin-top: 5rem;
+}

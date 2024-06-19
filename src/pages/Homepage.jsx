@@ -3,7 +3,8 @@ import DishesSlider from "../components/DishesSlider.jsx";
 import Header from "../components/Header.jsx";
 import ReastaurantList from "../components/ReastaurantList.jsx";
 import "../styles/Homepage.css";
-import Loading from "./Loading.jsx";
+import Loading from "../components/Loading.jsx";
+import Footer from "../components/Footer.jsx";
 
 function Homepage() {
   const [restaurantData, setRestaurantData] = useState([]);
@@ -37,6 +38,7 @@ function Homepage() {
       ) : (
         <ReastaurantList data={restaurantData} />
       )}
+      <Footer />
     </div>
   );
 }
