@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Outlet } from "react-router-dom";
 import DishesSlider from "../components/DishesSlider.jsx";
 import Header from "../components/Header.jsx";
 import ReastaurantList from "../components/ReastaurantList.jsx";
@@ -44,3 +45,4 @@ function Homepage() {
 }
 
 export default Homepage;
+// https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.30080&lng=73.20430&restaurantId=605290&catalog_qa=undefined&submitAction=ENTER

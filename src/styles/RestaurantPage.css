@@ -1,0 +1,20 @@
+.menuContainer {
+  padding: 0 25vw;
+}
+
+.menuHeader {
+  border: 1px solid rgb(188, 188, 188);
+  width: 100%;
+  padding: 10px 40px 40px;
+  border-radius: 20px;
+}
+
+.menuHeader h2 {
+  margin-bottom: 20px;
+}
+
+.menuHeader .restaurantIntroCard {
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}

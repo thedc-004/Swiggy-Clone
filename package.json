@@ -4,14 +4,15 @@
   "description": "This is the clone of the Swiggy app.",
   "scripts": {
     "test": "jest",
-    "dev" : "parcel index.html"
+    "dev": "parcel index.html"
   },
   "author": "The DC",
   "license": "ISC",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.2.1"
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "parcel": "^2.12.0",
