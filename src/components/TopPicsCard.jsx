@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { DEFAULT_IMG_URL } from "../utils/constants";
 
 function TopPicsCard({ data }) {
-  console.log(data);
+  // console.log(data);
   return (
     <div className="topPicsCard">
       <div className="topPicsCardHeader flex">

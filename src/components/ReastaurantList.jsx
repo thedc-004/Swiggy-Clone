@@ -1,6 +1,7 @@
 import { useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import { DEFAULT_IMG_URL } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 function ReastaurantList({ data }) {
   const [restaurantList, setRestaurantList] = useState(data);
@@ -60,14 +61,16 @@ function ReastaurantList({ data }) {
           let area = rest.info.areaName;
           let id = rest.info.id;
           return (
-            <RestaurantCard
-              name={name}
-              imgUrl={imgUrl}
-              rating={rating}
-              cuisine={cuisine}
-              area={area}
-              key={id}
-            />
+            <Link to={"/restaurants/" + id}>
+              <RestaurantCard
+                name={name}
+                imgUrl={imgUrl}
+                rating={rating}
+                cuisine={cuisine}
+                area={area}
+                key={id}
+              />
+            </Link>
           );
         })}
       </div>

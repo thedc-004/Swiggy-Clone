@@ -1,7 +1,11 @@
 .homepage {
   padding: 0 10vw;
+  color: black;
 }
 
+.homepage a {
+  all: unset;
+}
 .homepage .header,
 .restaurantPage .header {
   justify-content: space-between;

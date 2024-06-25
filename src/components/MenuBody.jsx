@@ -3,6 +3,7 @@ import TopPicsCard from "./TopPicsCard";
 import Accordian from "./Accordian";
 
 function MenuBody({ data }) {
+  console.log(data[1].card);
   return (
     <div className="menuBody">
       <h3 className="flex">
@@ -26,7 +27,9 @@ function MenuBody({ data }) {
         </ul>
       </div>
       <hr />
-      <TopPicsCard data={data[1].card.card.carousel} />
+      {data[1]?.card?.card?.carousel ? (
+        <TopPicsCard data={data[1].card.card.carousel} />
+      ) : null}
       {data.map((dataItem) => {
         const dishData = dataItem.card.card;
         const typeString = dishData["@type"];

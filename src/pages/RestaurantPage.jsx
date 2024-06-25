@@ -4,32 +4,33 @@ import Menu from "../components/Menu";
 import { RESTAURANT_MENU_API } from "../utils/constants";
 import "../styles/RestaurantPage.css";
 import Loading from "../components/Loading";
+import { useParams } from "react-router-dom";
 
 function RestaurantPage() {
   const [restaurantData, setRestaurantData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { restId } = useParams();
+  // console.log();
 
   useEffect(() => {
-    fetchData(RESTAURANT_MENU_API);
+    fetchData(RESTAURANT_MENU_API + restId);
   }, []);
 
   async function fetchData() {
     setLoading(true);
-    const res = await fetch(RESTAURANT_MENU_API);
-    const json = await res.json();
-    setRestaurantData(json?.data?.cards);
+    const res = await fetch(RESTAURANT_MENU_API + restId);
+    const resJSON = await res.json();
+    setRestaurantData(resJSON?.data?.cards);
     setLoading(false);
   }
 
   if (loading) {
     return <Loading />;
   }
-  // console.log(restaurantData[4].groupedCard.cardGroupMap.REGULAR.cards[1]);
 
   return (
     <div className="restaurantPage">
       <Header />
-
       <Menu restaurantData={restaurantData} />
     </div>
   );
