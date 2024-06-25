@@ -1,3 +1,5 @@
+import { DEFAULT_IMG_URL } from "../utils/constants";
+
 function DishesSlider({ sliderData }) {
   return (
     <div className="dishesSliderContainer">
@@ -6,9 +8,7 @@ function DishesSlider({ sliderData }) {
       </div>
       <div className="dishesSlider flex">
         {sliderData.map((sliderItem) => {
-          let imgUrl =
-            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/" +
-            sliderItem.imageId;
+          let imgUrl = DEFAULT_IMG_URL + sliderItem.imageId;
           let id = sliderItem.id;
           let altText = sliderItem.accessibility.altText;
           return (

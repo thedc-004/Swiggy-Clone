@@ -1,5 +1,6 @@
 import { useState } from "react";
 import RestaurantCard from "./RestaurantCard";
+import { DEFAULT_IMG_URL } from "../utils/constants";
 
 function ReastaurantList({ data }) {
   const [restaurantList, setRestaurantList] = useState(data);
@@ -53,9 +54,7 @@ function ReastaurantList({ data }) {
       <div className="restaurantList">
         {restaurantList.map((rest) => {
           let name = rest.info.name;
-          let imgUrl =
-            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-            rest.info.cloudinaryImageId;
+          let imgUrl = DEFAULT_IMG_URL + rest.info.cloudinaryImageId;
           let rating = rest.info.avgRating;
           let cuisine = rest.info.cuisines.join(", ");
           let area = rest.info.areaName;

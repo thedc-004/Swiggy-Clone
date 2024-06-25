@@ -1,5 +1,6 @@
 .menuContainer {
   padding: 0 25vw;
+  /* padding-bottom: 50vh; */
 }
 
 .menuHeader {
@@ -17,4 +18,152 @@
   align-items: start;
   flex-direction: column;
   gap: 10px;
+}
+
+.menuBody > h3 {
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.searchDish {
+  background-color: grey;
+  border-radius: 10px;
+  padding-right: 15px;
+  font-size: 1.1rem;
+}
+
+.searchDish input {
+  all: unset;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+}
+
+.searchDish span {
+  font-size: 1.5rem;
+}
+
+.dishFilters ul {
+  list-style-type: none;
+  justify-content: start;
+  gap: 20px;
+}
+
+.dishFilters li {
+  padding: 5px 10px;
+  margin: 20px 0;
+  background-color: rgb(197, 197, 197);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dishFilters li:hover {
+  background-color: grey;
+}
+
+.topPicsCard .topPicsCardHeader {
+  justify-content: space-between;
+  margin: 30px 0 10px;
+}
+
+.topPicsCardHeader h3 {
+  font-size: 1.3rem;
+}
+
+.topPicsCardHeaderRight {
+  gap: 20px;
+}
+
+.topPicsCardHeaderRight span {
+  background-color: grey;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.topPicsCard .topPicsCardBody {
+  justify-content: start;
+  overflow-x: scroll;
+  gap: 20px;
+}
+
+.topPicsBodyItem img {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.topPicsBodyItem {
+  position: relative;
+}
+
+.topPicsBodyItem div {
+  position: absolute;
+  bottom: 5vh;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.topPicsBodyItem div span {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.topPicsBodyItem button {
+  all: unset;
+  padding: 5px 20px;
+  margin: 20px 0;
+  background-color: white;
+  color: rgb(27, 166, 114);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.accordian {
+  box-shadow: 1px 1px 1px 2px grey;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.accordian .accordianHeader {
+  justify-content: space-between;
+  background-color: grey;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.accordian .accordianHeader span {
+  font-size: 1.5rem;
+}
+
+.accordian .accordianItem {
+  width: 100%;
+  background-color: rgb(194, 194, 194);
+  border-radius: 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.accordianItemLeft {
+  width: 70%;
+}
+
+.accordianItemRight img {
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+.nestedCategory {
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px 0;
 }
